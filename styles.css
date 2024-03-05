@@ -1,1 +1,86 @@
 /* test style writing here */
+
+html, body {
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%;
+}
+
+.main {
+  width:100%;
+  height:100%;
+}
+.homebar {
+  background-color:#ded6d6;
+  height:12.5%;
+  width:100%;
+}
+.logo {
+  
+}
+.photo1 {
+  
+}
+.photo2 {
+  
+}
+.photo3 {
+  
+}
+.photo4 {
+  
+}
+.profilephoto {
+  
+}
+
+.belowhomebar {
+  background-color:#8a29ad;
+  height:10%;
+  vertical-align:center;
+}
+.belowhomebartext {
+  height:50%;
+}
+
+.todaysdate {
+  
+}
+.resources {
+  
+}
+
+
+.courses {
+  
+}
+.mycourses {
+  
+}
+.couresboxes {
+  
+}
+
+
+.announcements {
+  
+}
+.evaluations {
+  
+}
+.worktodoexams {
+  
+}
+.worktodoreadings {
+  
+}
+/* .resources { */
+/*    */
+/* } */
+/* .resources { */
+/*    */
+/* } */
+/* .resources { */
+/*    */
+/* } */
