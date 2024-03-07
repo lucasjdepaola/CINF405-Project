@@ -1,14 +1,7 @@
-const sort = (arr) => {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = i; j < arr.length; j++) {
-      if (arr[i] > arr[j]) {
-        const temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-      }
-    }
-  }
-  return arr;
+const gid = (name) => {
+  return document.QuerySelector(name);
 };
-
-console.log(sort([5, 3, 5, 6, 7, 8]));
+const d = gid("todaysdate");
+const getDate = () => {
+  const date = new Date();
+};
