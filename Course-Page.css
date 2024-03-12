@@ -1,0 +1,90 @@
+/*Style sheet for Course_Page.html*/
+body{
+    width:100%;
+    height:1000px;
+}
+.pageContent{
+    font-size:12px;
+    width:100%;
+    height:100%;
+    align-content:center;
+    background-color: aquamarine;
+}
+
+/*Start of Styles for the header content*/
+.headerContent{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:13%;
+
+}
+
+.globalNav{
+    align-content:center;
+    background-color:rgb(130, 122, 138);
+    width:100%;
+    height:58%;
+}
+
+.siteNav{
+    align-items:flex-start;
+    background-color:rgb(82, 6, 112);
+    width:100%;
+    height:42%;
+}
+
+/*Start of styles for the main content of the page*/
+main{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*This will need to be looked at again!*/
+.heroImage{
+    width:60%;
+    min-height: 18%;
+    background-color: brown;
+
+}
+
+.classInfoHolder{
+    display:flex;
+    flex-direction: row;
+    height:100%;
+    width:65%;
+    justify-content: space-around;
+}
+
+.leftMainContent{
+    width:35%;
+    background-color: rgb(230, 94, 94);
+    height:50%
+}
+
+.rightMainContent{
+    width: 49%;
+    background-color: chartreuse;
+    height: 83%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.assingmentsWorkToDo{
+    width:45%;
+    background-color: black;
+    height:40%;
+    margin: 1%;
+}
+
+.contentBrowser{
+    width:90%;
+    margin:1%;
+    background-color: blue;
+    height:50%;
+}
