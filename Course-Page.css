@@ -4,11 +4,11 @@ body{
     height:1000px;
 }
 .pageContent{
-    font-size:12px;
+    font-size:16px;
     width:100%;
     height:100%;
     align-content:center;
-    background-color: aquamarine;
+    background-color: #e1e8ef;
 }
 
 /*Start of Styles for the header content*/
@@ -16,22 +16,36 @@ body{
     display:flex;
     flex-direction:column;
     width:100%;
-    height:13%;
+    height:20%;
 
 }
 
 .globalNav{
-    align-content:center;
-    background-color:rgb(130, 122, 138);
-    width:100%;
-    height:58%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 85%;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .siteNav{
-    align-items:flex-start;
     background-color:rgb(82, 6, 112);
     width:100%;
-    height:42%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteNavContent{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+.siteNavContent a{
+    color:white
 }
 
 /*Start of styles for the main content of the page*/
@@ -46,9 +60,7 @@ main{
 /*This will need to be looked at again!*/
 .heroImage{
     width:60%;
-    min-height: 18%;
-    background-color: brown;
-
+    height: 18%;
 }
 
 .classInfoHolder{
@@ -57,34 +69,84 @@ main{
     height:100%;
     width:65%;
     justify-content: space-around;
+    margin-top: 1%;
 }
 
 .leftMainContent{
     width:35%;
-    background-color: rgb(230, 94, 94);
-    height:50%
+    background-color: rgb(255, 255, 255);
+    height:fit-content;
+    border-radius: 2%;
+    padding: 1%;
 }
 
 .rightMainContent{
     width: 49%;
-    background-color: chartreuse;
+    background-color: #e1e8ef;
     height: 83%;
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
+.rightMainContent a{
+    color:black;
+    text-decoration: underline;
+}
 
 .assingmentsWorkToDo{
     width:45%;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     height:40%;
     margin: 1%;
+    border-radius: 2%;
+    padding: 1%;
 }
 
 .contentBrowser{
-    width:90%;
-    margin:1%;
-    background-color: blue;
-    height:50%;
+    width: 94%;
+    margin: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 50%;
+    border-radius: 2%;
+    padding: 1%;
 }
+
+/*Additional Styles for links and images and buttons*/
+img{
+    width: 8%;
+    height: 30%;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+.button{
+    color:rgb(74, 74, 243)
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .outsideContentDropdown{
+        position: relative;
+        display: inline-block;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {display: block;}

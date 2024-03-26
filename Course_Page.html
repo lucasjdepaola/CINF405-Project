@@ -14,11 +14,15 @@
       <div class="headerContent">
         <!--This is for the global albany navigation-->
         <div class="globalNav">
-
+          <img src="UAlbany Logo.png" alt="Ualbany Logo" style="width:8%; height: 25%;"> <p> | </p>
+           <a href=""><strong>APHI 112, Critical Thinking</strong></a>
+           </p>
         </div>
         <!--This is for the brightspace navigation-->
         <div class="siteNav">
-
+          <div class = "siteNavContent">
+          <a href="">Course Home</a> <a href="">Announcements</a>  <a href="">Content</a>  <a href="">Assignments</a>   <a href="">Discussions</a> <a href="">Quizzes</a> <a href="">Grades</a>   <a href="">Brightspace Resources</a> 
+          </div>
         </div>
       </div>
       <!--This will hold all of the main content of the page-->
@@ -26,27 +30,79 @@
     <main>
       <!--This class will hold the main image for the page-->
       <div class="heroImage">
+        <img src="Course_Img.jpg" alt="Background Image" style="height:-webkit-fill-available; width: -webkit-fill-available;">
       </div>
       <!--This is to hold the ammouncements, work to do, and the content browser-->
       <div class="classInfoHolder">
         <!--This is for the announcement section-->
         <div class="leftMainContent">
-        
+
+          <!-- This is used for the "collaps this widget" function that uses a span element-->
+          <label for="widgitchoice">Content Browser</label>
+
+          <select name="contentbrowser" id="widgitchoice">
+            <option value=""></option>
+            <option value="Content.html">Go to Content</option>
+            <option value="">Go to Content</option>
+          </select>
+          <br>
+          <br>
+          <button class="buttons">Bookmarks</button>
+          <button class="buttons">Recently Visited</button>
+          <strong><p>Home</p></strong>
+
+          <!--This code creates a clickable dropdown for the content with links-->
+          <div class = outsideContentDropdown></div>
+          <button onclick="contentDropdown()" class="contentDropdown">Course Content</button>
+          <div id="courseContentDropdown" class="dropdown-content">
+            <a href="#">Lorem Ipsum</a>
+            <a href="#">Lorem Ipsum</a>
+            <a href="#">Lorem Ipsum</a>
+          </div>
+
         </div>
         <!--This is for the Work to do, and the Content browser-->
         <div class="rightMainContent">
           <!--This is for the work to do content-->
           <div class="assingmentsWorkToDo">
-
+            <a href="">Work to Do (Assignments)</a> 
+            <br>
+            <h4>Overdue</h4>
+            <hr>
+            <button class="buttons">Lorem Ipsum Lorem Ipsum Lorem Ipsum</button>
+            <br>
+            <h4>Current Due</h4>
+            <hr>
+            <button class="buttons">Lorem Ipsum Lorem Ipsum Lorem Ipsum</button>
           </div>
           <!--This is for the work to do content-->
           <div class="assingmentsWorkToDo">
-
+            <a href="">Work to Do (Readings)</a> 
+            <br>
+            <h4>Overdue</h4>
+            <hr>
+            <button class="buttons">Lorem Ipsum Lorem Ipsum Lorem Ipsum</button>
+            <br>
+            <h4>Current Due</h4>
+            <hr>
+            <button class="buttons">Lorem Ipsum Lorem Ipsum Lorem Ipsum</button>
           </div>
           <!--This is for the content browser-->
           <div class="contentBrowser">
+            <label for="widgitchoice">Announcements</label>
 
-          </div>
+          <select name="contentbrowser" id="widgitchoice">
+            <option value=""></option>
+            <option value="Content.html">Go to Announcements</option>
+            <option value="">RSS</option>
+            <option value="">Notifications</option>
+          </select>
+          <h2>Office Hourse Cancled Today</h2>
+          <br>
+          <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
+          <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
+          <hr>
+        </div>
 
         </div>
 
@@ -57,5 +113,6 @@
 	<!--<script src="index.js"></script>-->
 
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
