@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="Will_Style.css">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Brightspace - Profile</title>
+	</head>
+	<body>
+		
+		<!-- Header - Appears at the top of each page -->
+		
+		<div class="UalbanyHeaderTop">
+			<a href="https://www.albany.edu/" target="_blank">
+				<img src="https://i.imgur.com/BD3DmQk.png" alt="Ualbany Logo"> 
+			</a><img src="https://i.imgur.com/DYrSnSY.png" id="Home" alt="Home">
+			<img src="https://i.imgur.com/2UEticV.png" id="Message" alt="Message">
+			<img src="https://i.imgur.com/3KQd1Lt.png" id="Subscription" alt="Subscription">
+			<img src="https://i.imgur.com/jf6WJot.png" id="Notification" alt="Notification">
+			<img src="https://i.imgur.com/JGOfKZf.png" id="Profile" alt="Profile">
+		</div>
+		<div class="UalbanyHeaderBottom">
+		</div>
+		
+		<script>
+			var date = new Date();
+			var dateNow = date.toLocaleString();
+			
+			document.getElementById("date").innerHTML = dateNow;
+		</script>
+		
+		
+		<div id="points">
+			<h1 id="pointsText" style="font-size: 60px; margin-left: 25%;">POINTS: 420</h1>
+			<h1>Point System:</h1>
+			
+			<a href="Will_PointShop.html" target="_blank">Point Store</a><br><br>
+			<a href="nope" target="_blank">My Customizables</a><br><br>
+			
+			<h1>HELP:</h1>
+			<a href="nope" target="_blank">What can I use points on?</a><br><br>
+			<a href="nope" target="_blank">How do I earn points?</a><br><br>
+		</div>
+		
+		
+		<div id = "left">
+			<div id="pfp">
+				<img src="pfp.png" width="30%" style="margin-left:33%;">
+			</div>
+			
+			<br>
+			
+			<div id="personalInfo">
+				<h1 style="margin-top: 70%" id="nameText">Name: Will Ziegler</h1><br>
+				<h1 id="yearText">Year: Junior</h1><br>
+				<h1 id="expgradText">Expected Graduation: May 2025</h1><br>
+				<h1 id="degreeText">Degree: Informatics/Comp Sci BA</h1>
+				
+				<script src="infoEdit.js"></script>
+				<!--<input id="name" type="text"><br>
+				<input id="year" type="text"><br>
+				<input id="grad" type="text"><br>
+				<input id="degree" type="text"><br>-->
+				
+				<button style="margin: 3%; padding: 2%" onclick="infoEdit()">Change Info</button>
+			</div>
+
+			<div id="editInfo">
+				<label for="Name">Name:</label>
+				<input type="text" id="Name" name="Name"><br>
+
+				<label for="Year">Year:</label>
+				<input type="text" id="Year" name="Year"><br>
+
+				<label for="ExpGrad">Expected Graduation(MM/YY):</label>
+				<input type="text" id="ExpGrad" name="ExpGrad"><br>
+
+				<label for="Degree">Degree:</label>
+				<input type="text" id="Degree" name="Degree"><br>
+
+				<button style="margin: 3%; padding: 2%" onclick="confirm()">Submit</button>
+			</div>
+		</div>
+	
+	</body>
+</html>
