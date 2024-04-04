@@ -2,14 +2,8 @@ const gid = (name) => {
   return document.querySelector("." + name);
 };
 const d = gid("todaysdate");
-const courses = gid("courses");
 const getDate = () => {
   const date = new Date();
-  const minute = date.getMinutes();
-  const hour = date.getHours();
-  const day = date.getDay();
-  const month = date.getMonth();
-  const year = date.getFullYear();
   console.log(d);
   d.innerText = new Date().toString(); //year + " " + month + " " + day;
 };
@@ -24,6 +18,12 @@ const spawnCourse = (name, photourl) => {
   const cloneCourse = document.cloneElement(course);
 };
 
-gid("subcourse").addEventListener("click", () => {
-  location.href = "Course_Page.html";
-});
+const clickCourse = (names) => {
+  for (name of names) {
+    gid("subcourse").addEventListener("click", () => {
+      location.href = name + "_Page.html";
+    });
+  }
+};
+const coursenames = ["Calculus"];
+clickCourse(coursenames);
