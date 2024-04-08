@@ -8,7 +8,7 @@ body{
     width:100%;
     height:100%;
     align-content:center;
-    background-color: #e1e8ef;
+    background-color: #f6f7f8;
 }
 
 /*Start of Styles for the header content*/
@@ -22,7 +22,7 @@ body{
 
 .globalNav{
     display: flex;
-    background-color: rgb(255, 255, 255);
+    background-color: #d9d9d9;
     width: 100%;
     height: 85%;
     justify-content: center;
@@ -30,7 +30,7 @@ body{
 }
 
 .siteNav{
-    background-color:rgb(82, 6, 112);
+    background-color:#46166b;
     width:100%;
     height: 30%;
     display: flex;
@@ -74,7 +74,7 @@ main{
 
 .leftMainContent{
     width:35%;
-    background-color: rgb(255, 255, 255);
+    background-color: #d9d9d9;
     height:fit-content;
     border-radius: 2%;
     padding: 1%;
@@ -82,7 +82,7 @@ main{
 
 .rightMainContent{
     width: 49%;
-    background-color: #e1e8ef;
+    background-color: #f6f7f8;
     height: 83%;
     display: flex;
     justify-content: center;
@@ -96,7 +96,7 @@ main{
 
 .assingmentsWorkToDo{
     width:45%;
-    background-color: rgb(255, 255, 255);
+    background-color: #d9d9d9;
     height:40%;
     margin: 1%;
     border-radius: 2%;
@@ -106,7 +106,7 @@ main{
 .contentBrowser{
     width: 94%;
     margin: 1%;
-    background-color: rgb(255, 255, 255);
+    background-color: #d9d9d9;
     height: 50%;
     border-radius: 2%;
     padding: 1%;
@@ -150,3 +150,12 @@ a:link, a:visited {
   }
 
   .show {display: block;}
+
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-size: x-large;
+  }
