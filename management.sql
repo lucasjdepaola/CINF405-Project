@@ -10,5 +10,6 @@ CREATE TABLE account (
     email varchar(255) NOT NULL,
     pass varchar(255) NOT NULL,
     points int,
+    theme varchar(255) NOT NULL,
     typeId int NOT NULL
 );
