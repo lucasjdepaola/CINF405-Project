@@ -1,0 +1,105 @@
+/*Style sheet for Course_Page.html*/
+body{
+    width:100%;
+    height:1000px;
+}
+.pageContent{
+    font-size:16px;
+    width:100%;
+    height:100%;
+    align-content:center;
+    background-color: #f6f7f8;
+}
+
+/*Start of Styles for the header content*/
+.headerContent{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:20%;
+
+}
+
+.globalNav{
+    display: flex;
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 85%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.siteNav{
+    background-color:#46166b;
+    width:100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteNavContent{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+.siteNavContent a{
+    color:white
+}
+
+/*Start of styles for the main content of the page*/
+main{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.classInfoHolder{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    width:60%;
+    margin-top: 3%;
+    border: 1px solid black;
+    border-radius: 2%;
+    padding:5px;
+}
+
+.assignmentGrid{
+    display: grid;
+    grid-template-columns:5fr 2fr 2fr 2fr;
+    column-gap: 5px;
+    row-gap: 25px;
+    border: 1px solid black;
+    background-color: #d9d9d9;
+    padding: 10px;
+}
+
+
+.assignmentGrid > div {
+    display: grid;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    justify-items: start;
+  }
+
+.assignmentGrid > div a:link{
+    font-size: 25px;
+}
+
+
+
+/*Additional Styles for links and images and buttons*/
+
+
+a:link, a:visited {
+    text-decoration: none;
+    font-size: 16px;
+  }
