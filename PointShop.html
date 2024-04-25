@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/Profile.css">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Brightspace - Customizables</title>
+	</head>
+	<body>
+		<div class="UalbanyHeaderTop"> <a href="https://www.albany.edu" target="_blank"><img src="https://i.imgur.com/QMTcVJQ.png" alt="Ualbany Logo"></a> <a href="index.html"><img src="https://i.imgur.com/DYrSnSY.png" id="Home" alt="Home" style="width:35px;height:35px;"></a> <img src="https://i.imgur.com/2UEticV.png" id="Message" alt="Message"> <img src="https://i.imgur.com/3KQd1Lt.png" id="Subscription" alt="Subscription"> <img src="https://i.imgur.com/jf6WJot.png" id="Notification" alt="Notification"> <a href="Profile.html"><img src="https://i.imgur.com/JGOfKZf.png" id="Profile" alt="Profile" style="width:35px;height:35px;"></a></div>
+<div class="UalbanyHeaderBottom">
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn"> </button>
+      <a href="Course_Page.html" class="navcurrent">CINF-405/505&nbsp;</a>
+      <div class="dropdown-content"> <a href="#">ICSI-311</a> <a href="#">ICSI-499</a> </div>
+    </div>
+    | <a href="Announcements.html" class="nav">Announcements</a> | <a href="Content.html" class="nav">Content</a> | <a href="AssignmentPage.html" class="nav">Assignments</a> | <a href="Discussion.html" class="nav">Discussion</a> | <a href="Grades.html" class="nav">Grades</a></nav>
+</div>
+		
+		
+		<script>
+			var date = new Date();
+			var dateNow = date.toLocaleString();
+			
+			document.getElementById("date").innerHTML = dateNow;
+		</script>
+
+		<div id="right">
+			<script src="/js/points.js"></script>
+
+			<button id="bgColorButton" onclick:"test()" style="margin-bottom:5%">Background Color</h1>
+			<button id="pfpButton" onclick:"test()" style="margin-bottom:5%">Profile Image</h1>
+			<button id="xtraTimeButton" onclick:"test()" style="margin-bottom:5%">Extra Class Time</h1>
+			<button id="otherSettingsButton" onclick:"test()" style="margin-bottom:5%">Other Settings</h1>
+		</div>
+		
+		<div id = "left">
+			<div id="pfp">
+				<img src="https://i.imgur.com/Qau9JO0.png" alt="pfp" width="30%" style="margin-left:33%;">
+			</div>
+			
+			<br>
+			
+			<div id="personalInfo">
+				<h1 style="margin-top: 70%" id="nameText2">Name: Will Ziegler</h1><br>
+				<h1 id="pointsText">Points: 420</h1><br>
+			</div>
+
+		</div>
+	
+	</body>
+</html>

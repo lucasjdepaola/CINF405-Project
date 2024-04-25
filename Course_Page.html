@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course_Content</title>
+   <link rel="stylesheet" href="css/Course-Page.css">
+  </head>
+  <body>
+    <!--This is the entire page div-->
+    <div class="pageContent">
+      <!--This is for the entire header-->
+     <div class="UalbanyHeaderTop">
+	<a href="https://www.albany.edu" target="_blank"><img src="https://i.imgur.com/QMTcVJQ.png" alt="Ualbany Logo"></a>
+	<a href="index.html"><img src="https://i.imgur.com/DYrSnSY.png" id="Home" alt="Home" style="width:35px;height:35px;"></a>
+	<img src="https://i.imgur.com/2UEticV.png" id="Message" alt="Message">
+	<img src="https://i.imgur.com/3KQd1Lt.png" id="Subscription" alt="Subscription">
+	<img src="https://i.imgur.com/jf6WJot.png" id="Notification" alt="Notification">
+	<a href="Profile.html"><img src="https://i.imgur.com/JGOfKZf.png" id="Profile" alt="Profile" style="width:35px;height:35px;"></a></div>
+<div class="UalbanyHeaderBottom">
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn"> </button>
+      <a href="Course_Page.html" class="navcurrent">CINF-405/505&nbsp;</a>
+      <div class="dropdown-content"> <a href="#">ICSI-311</a> <a href="#">ICSI-499</a> </div>
+    </div>
+    | <a href="Announcements.html" class="nav">Announcements</a> | <a href="Content.html" class="nav">Content</a> | <a href="AssignmentPage.html" class="nav">Assignments</a> | <a href="Discussion.html" class="nav">Discussion</a> | <a href="Grades.html" class="nav">Grades</a></nav>
+</div>
+      <!--This will hold all of the main content of the page-->
+    <!--This is where all of the main content for the Page will go-->
+    <main>
+      <!--This class will hold the main image for the page-->
+      <div class="heroImage">
+        <img src="Images/Course_Img.jpg" alt="Background Image" style="height:-webkit-fill-available; width: -webkit-fill-available;">
+      </div>
+      <!--This is to hold the ammouncements, work to do, and the content browser-->
+      <div class="classInfoHolder">
+        <!--This is for the announcement section-->
+        <div class="leftMainContent">
+
+          <!-- This is used for the "collaps this widget" function that uses a span element-->
+          <label for="widgitchoice">Content Browser</label>
+
+          <select name="contentbrowser" id="widgitchoice">
+            <option value=""></option>
+            <option value="Content.html">Go to Content</option>
+            <option value="">Go to Content</option>
+          </select>
+          <br>
+          <br>
+          <button class="buttons">Bookmarks</button>
+          <button class="buttons">Recently Visited</button>
+          <strong><p>Home</p></strong>
+
+          <!--This code creates a clickable dropdown for the content with links-->
+          <div class = outsideContentDropdown></div>
+          <button onclick="contentDropdown()" class="contentDropdown">Course Content</button>
+          <div id="courseContentDropdown" class="dropdown-content">
+            <a href="#">Lorem Ipsum</a>
+            <a href="#">Lorem Ipsum</a>
+            <a href="#">Lorem Ipsum</a>
+          </div>
+
+        </div>
+        <!--This is for the Work to do, and the Content browser-->
+        <div class="rightMainContent">
+          <!--This is for the work to do content-->
+          <div class="assingmentsWorkToDo">
+            <a href="">Work to Do (Assignments)</a> 
+            <br>
+            <h4>Overdue</h4>
+            <hr>
+            <button class="buttons">Lorem Ipsum Lorem Ipsum Lorem Ipsum</button>
+            <br>
+            <h4>Current Due</h4>
+            <hr>
+            <button class="buttons">Lorem Ipsum Lorem Ipsum Lorem Ipsum</button>
+          </div>
+          <!--This is for the work to do content-->
+          <div class="assingmentsWorkToDo">
+            <a href="">Work to Do (Readings)</a> 
+            <br>
+            <h4>Overdue</h4>
+            <hr>
+            <button class="buttons">Lorem Ipsum Lorem Ipsum Lorem Ipsum</button>
+            <br>
+            <h4>Current Due</h4>
+            <hr>
+            <button class="buttons">Lorem Ipsum Lorem Ipsum Lorem Ipsum</button>
+          </div>
+          <!--This is for the content browser-->
+          <div class="contentBrowser">
+            <label for="widgitchoice">Announcements</label>
+
+          <select name="contentbrowser" id="widgitchoice">
+            <option value=""></option>
+            <option value="Content.html">Go to Announcements</option>
+            <option value="">RSS</option>
+            <option value="">Notifications</option>
+          </select>
+          <h2>Office Hourse Cancled Today</h2>
+          <br>
+          <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
+          <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
+          <hr>
+        </div>
+
+        </div>
+
+      </div>
+
+
+    </main>
+	<!--<script src="index.js"></script>-->
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
