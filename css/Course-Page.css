@@ -1,0 +1,292 @@
+/*Style sheet for Course_Page.html*/
+body{
+    width:100%;
+    height:1000px;
+}
+.pageContent{
+    font-size:16px;
+    width:100%;
+    height:100%;
+    align-content:center;
+    background-color: #f6f7f8;
+}
+
+/*Start of Styles for the header content*/
+.headerContent{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:20%;
+
+}
+
+.globalNav{
+    display: flex;
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 85%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.siteNav{
+    background-color:#46166b;
+    width:100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteNavContent{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+.siteNavContent a{
+    color:white
+}
+
+/*Start of styles for the main content of the page*/
+main{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*This will need to be looked at again!*/
+.heroImage{
+    width:60%;
+    height: 18%;
+}
+
+.classInfoHolder{
+    display:flex;
+    flex-direction: row;
+    height:100%;
+    width:65%;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+.leftMainContent{
+    width:35%;
+    background-color: #d9d9d9;
+    height:fit-content;
+    border-radius: 2%;
+    padding: 1%;
+}
+
+.rightMainContent{
+    width: 49%;
+    background-color: #f6f7f8;
+    height: 83%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rightMainContent a{
+    color:black;
+    text-decoration: underline;
+}
+
+.assingmentsWorkToDo{
+    width:45%;
+    background-color: #d9d9d9;
+    height:40%;
+    margin: 1%;
+    border-radius: 2%;
+    padding: 1%;
+}
+
+.contentBrowser{
+    width: 94%;
+    margin: 1%;
+    background-color: #d9d9d9;
+    height: 50%;
+    border-radius: 2%;
+    padding: 1%;
+}
+
+/*Additional Styles for links and images and buttons*/
+img{
+    width: 8%;
+    height: 30%;
+}
+
+.button{
+    color:rgb(74, 74, 243)
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .outsideContentDropdown{
+        position: relative;
+        display: inline-block;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {display: block;}
+
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-size: x-large;
+  }
+/* Ian */
+.UalbanyHeaderTop {
+  background-color: #e0d4d4;
+  height: 18%;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+  border: 2px solid #ecb236;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.UalbanyHeaderBottom {
+  background-color: #48146c;
+  height: 75px;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+  border: 2px solid #ecb236;
+}
+nav {
+  padding-top: 14px;
+  font-size: 36px;
+  color: White;
+  text-align: left;
+  white-space: nowrap;
+}
+img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  max-height: 310px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+#Home {
+  height: 35px;
+  width: 70px;
+}
+#Home:hover {
+  content: url('https://i.imgur.com/0AYXgTt.png')
+}
+#Message {
+  height: 25px;
+  width: 50px;
+}
+#Message:hover {
+  content: url('https://i.imgur.com/8v8actu.png');
+}
+#Subscription {
+  height: 35px;
+  width: 70px;
+}
+#Subscription:hover {
+  content: url('https://i.imgur.com/PSAPflt.png')
+}
+#Notification {
+  height: 35px;
+  width: 70px;
+}
+#Notification:hover {
+  content: url('https://i.imgur.com/gNlNe5r.png')
+}
+#Profile {
+  height: 35px;
+  width: 70px;
+}
+#Profile:hover {
+  content: url('https://i.imgur.com/M5viVnX.png')
+}
+/*Link Colors*/
+/* mouse over link */
+a.nav {
+  text-decoration: none;
+}
+a.nav:link {
+  color: white;
+}
+a.nav:hover {
+  color: #ecb236;
+}
+a.nav:active {
+  color: #ecb236;
+}
+a.navpoints:link {
+  color: #48146c;
+}
+a.navpoints:hover {
+  color: #ecb236;
+}
+a.navcurrent:visited {
+  color: #ecb236;
+}
+a.navcurrent:hover {
+  color: #ecb236;
+}
+/* The dropdown container */
+.dropdown {
+  float: left;
+  left: 0px;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 36px;
+  border: none;
+  background-color: #48146c;
+  padding-bottom: 27.5px;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  border: 2px solid #ecb236;
+  display: none;
+  background-color: #48146c;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 0px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  color: gold;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Lucas */
+  a {
+    all: unset;
+    cursor: pointer;
+  }
